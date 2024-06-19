@@ -1,5 +1,5 @@
 # x64Assembly-Yearly-Average-Temperature
-Read in a file with temperatures and calculate the average for a year
+Read in a file with temperatures and calculate the average for a year (Not 100% accurate as floating points are cut off and not rounded!)
 
 Usage: CREATED WITH NASM ASSEMBLER
 
