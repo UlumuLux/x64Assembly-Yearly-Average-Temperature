@@ -1,6 +1,3 @@
-
-;---------------------------------------------------------------;
-
 section .bss
   BUFFLEN equ 7        ; needed buffer length
   Buffer  resb BUFFLEN ; buffer to read 7 bytes at a time from file
@@ -36,8 +33,8 @@ _start:
 		mov rdx, BUFFLEN ; bytes to read
 		syscall
 
-		cmp rax, 0	 ; to check for EOL
-		je CalcAvg	 ; if EOL -> calculate average
+		cmp rax, 0	 ; to check for EOF
+		je CalcAvg	 ; if EOF -> calculate average
 		jb ReadError     ; if lower than 0 -> show read error
 
                 xor rdx, rdx     	; clear rdx
