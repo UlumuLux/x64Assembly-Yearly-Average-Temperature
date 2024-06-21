@@ -11,3 +11,5 @@ Usage: CREATED WITH **NASM** ASSEMBLER UNDER **LINUX**
 
 3. run
 >./temperature_avg < input_test.txt
+
+This program is purely made as/ for learning purposes!
